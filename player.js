@@ -67,6 +67,7 @@ const musicPlayer = {
 
         this.audioPlayer.volume = this.volume;
         this.volumeBar.value = this.volume * 100;
+        this.paintRange(this.volumeBar);
     },
 
     setupEventListeners() {
@@ -126,6 +127,7 @@ const musicPlayer = {
         this.volumeBar.oninput = () => {
             this.volume = Number(this.volumeBar.value) / 100;
             audio.volume = this.volume;
+            this.paintRange(this.volumeBar);
         };
         this.volumeBar.onchange = () => this.savePlayerState();
 
@@ -270,8 +272,13 @@ const musicPlayer = {
     },
 
     updateProgressAppearance() {
-        const p = Number(this.progressBar.value);
-        this.progressBar.style.background = `linear-gradient(to right, var(--accent-color) ${p}%, #343635 ${p}%)`;
+        this.paintRange(this.progressBar);
+    },
+
+    // Tô màu phần đã chạy của thanh range (input min=0, max=100)
+    paintRange(range) {
+        const p = Number(range.value);
+        range.style.background = `linear-gradient(to right, var(--accent-color) ${p}%, #343635 ${p}%)`;
     },
 
     escapeHTML(html) {
