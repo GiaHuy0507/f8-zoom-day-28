@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Playlist nhạc Việt chill lofi dành cho những giờ học tập và làm việc."
+        />
+        <title>Nhạc Việt Chill Lofi</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="player.css" />
+    </head>
+    <body>
+        <main class="player">
+            <section class="playlist-panel" aria-labelledby="playlist-title">
+                <header class="playlist-header">
+                    <p class="eyebrow">PLAYLIST</p>
+                    <h1 id="playlist-title">Nhạc Việt Chill Lofi</h1>
+                    <p class="playlist-description">
+                        Tuyển tập những ca khúc chill lofi nhẹ nhàng thư giãn cho ngày làm việc học tập hiệu quả.
+                    </p>
+                    <p class="playlist-meta">
+                        <strong>F8 Student</strong>
+                        <span aria-hidden="true">•</span>
+                        <span>5 bài hát</span>
+                        <span aria-hidden="true">•</span>
+                        <span>khoảng 20 phút</span>
+                    </p>
+                </header>
+
+                <div class="track-heading" aria-hidden="true">
+                    <span class="track-number-heading">#</span>
+                    <span class="track-title-heading">TIÊU ĐỀ</span>
+                    <i class="far fa-clock"></i>
+                </div>
+                <div class="playlist" aria-label="Danh sách bài hát"></div>
+
+                <section class="player-controls" aria-label="Điều khiển trình phát">
+                    <div class="timeline">
+                        <span class="current-time">0:00</span>
+                        <input
+                            class="progress-bar"
+                            type="range"
+                            value="0"
+                            step="0.1"
+                            min="0"
+                            max="100"
+                            aria-label="Tiến trình bài hát"
+                        />
+                        <span class="duration-time">0:00</span>
+                    </div>
+
+                    <div class="control-row">
+                        <div class="transport-controls">
+                            <button class="btn btn-shuffle" type="button" aria-label="Phát ngẫu nhiên">
+                                <i class="fas fa-random"></i>
+                            </button>
+                            <button class="btn btn-prev" type="button" aria-label="Bài trước">
+                                <i class="fas fa-step-backward"></i>
+                            </button>
+                            <button class="btn btn-toggle-play" type="button" aria-label="Phát">
+                                <i class="play-icon fas fa-play"></i>
+                            </button>
+                            <button class="btn btn-next" type="button" aria-label="Bài tiếp theo">
+                                <i class="fas fa-step-forward"></i>
+                            </button>
+                            <button class="btn btn-loop" type="button" aria-label="Lặp lại">
+                                <i class="fas fa-redo"></i>
+                            </button>
+                        </div>
+                        <label class="volume-control">
+                            <i class="fas fa-volume-up" aria-hidden="true"></i>
+                            <input
+                                class="volume-bar"
+                                type="range"
+                                value="100"
+                                min="0"
+                                max="100"
+                                aria-label="Âm lượng"
+                            />
+                        </label>
+                    </div>
+                </section>
+                <audio class="audio-player" preload="metadata"></audio>
+            </section>
+
+            <aside class="now-playing-card" aria-label="Bài hát đang phát">
+                <p class="eyebrow">ĐANG PHÁT TỪ PLAYLIST</p>
+                <img class="cover-art" src="./cover.svg" alt="Minh họa phố Sài Gòn lúc hoàng hôn" />
+                <h2 class="current-song-title">...</h2>
+                <p class="current-song-artist"></p>
+            </aside>
+        </main>
+        <script src="./player.js"></script>
+    </body>
+</html>

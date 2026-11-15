@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title">
+  <title id="title">Saigon Dreams - a lo-fi journey</title>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#867b86"/>
+      <stop offset=".48" stop-color="#f2b383"/>
+      <stop offset="1" stop-color="#f7d08e"/>
+    </linearGradient>
+    <linearGradient id="street" x2="0" y2="1">
+      <stop stop-color="#68554e"/>
+      <stop offset="1" stop-color="#242b2a"/>
+    </linearGradient>
+    <linearGradient id="sun-glow" x2="0" y2="1">
+      <stop stop-color="#fff0bd" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#ff9c50" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#sky)"/>
+  <circle cx="302" cy="260" r="110" fill="url(#sun-glow)"/>
+  <circle cx="302" cy="258" r="48" fill="#ffe2a5"/>
+  <path d="M0 282 56 264l38 14 48-32 33 22 49-35 40 25 38-14 43 18 44-29 43 25 52-20 43 22 63-18v107H0Z" fill="#8c6d62" opacity=".6"/>
+  <path d="M0 184h114v197H0z" fill="#303a39"/>
+  <path d="M0 178h120l-9 22H0z" fill="#493e3b"/>
+  <path d="M17 211h24v28H17zm47 0h24v28H64zm-47 48h24v28H17zm47 0h24v28H64zm-47 48h24v28H17zm47 0h24v28H64z" fill="#e8b985"/>
+  <path d="M487 142h113v239H487z" fill="#293a3d"/>
+  <path d="m470 146 130-31v28l-130 30z" fill="#57423b"/>
+  <path d="M505 181h26v30h-26zm51-11h27v30h-27zm-51 60h26v30h-26zm51-11h27v30h-27zm-51 60h26v30h-26zm51-11h27v30h-27z" fill="#f3bf88"/>
+  <path d="M105 231h87v151h-87zm304-26h78v177h-78z" fill="#51514a"/>
+  <path d="M99 226h98v13H99zm303-7h90v13h-90z" fill="#4b3933"/>
+  <path d="M0 378h600v222H0z" fill="url(#street)"/>
+  <path d="M236 378h131l145 222H89z" fill="#473e39"/>
+  <path d="M288 388h23l6 40h-34zm-8 68h39l15 72h-68z" fill="#e9a76c" opacity=".42"/>
+  <path d="M0 394h600" stroke="#e9b783" stroke-opacity=".55" stroke-width="4"/>
+  <path d="M80 354h21v34H80zm424-9h19v39h-19z" fill="#f3c185"/>
+  <path d="M87 350h7m417-10h7" stroke="#ffe0a2" stroke-width="5"/>
+  <g fill="#1b2424" stroke="#1b2424" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="252" cy="456" r="28" fill="none" stroke-width="7"/>
+    <circle cx="351" cy="456" r="28" fill="none" stroke-width="7"/>
+    <path d="m252 456 35-42 26 42h-61l37-21 25 21 15-42h17" fill="none" stroke-width="7"/>
+    <path d="m281 407 22-4 22 20-17 18-14-26-24-2z"/>
+    <path d="m303 403-5-18 13-3 8 22zm-22 5-16 12-18-2 4-9 19-8z"/>
+    <path d="m333 456 13 32m-96-32-12 31" fill="none" stroke-width="9"/>
+    <path d="M280 431h28v11h-28z"/>
+  </g>
+  <path d="M0 526q170-33 300 0t300 0v74H0z" fill="#18201f" opacity=".35"/>
+  <rect x="25" y="25" width="550" height="550" rx="12" fill="none" stroke="#f3d9b7" stroke-opacity=".45" stroke-width="2"/>
+  <text x="47" y="86" fill="#262624" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="1">LOFI NIGHTS</text>
+  <text x="550" y="500" fill="#fff0cf" font-family="Arial, sans-serif" font-size="37" font-weight="800" text-anchor="end">SAIGON</text>
+  <text x="550" y="540" fill="#fff0cf" font-family="Arial, sans-serif" font-size="37" font-weight="800" text-anchor="end">DREAMS</text>
+  <text x="550" y="563" fill="#f5d3a6" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2" text-anchor="end">A LO-FI JOURNEY</text>
+</svg>
